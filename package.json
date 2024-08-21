@@ -1,0 +1,32 @@
+{
+  "name": "clipboard-translator",
+  "productName": "Clipboard Translator",
+  "version": "1.0.0",
+  "description": "Translate the text in the image from the clipboard when taking a screenshot.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "chcp 65001 && electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "lovebuizel",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^31.4.0"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^4.3.1",
+    "@google/generative-ai": "^0.17.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "jimp": "^0.22.12"
+  }
+}
